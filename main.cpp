@@ -1,11 +1,22 @@
 #include <iostream>
+#include <string>
+#include <sstream>
+#include <fstream>
+
+
 
 using namespace std;
 
 int main(){
 
-    cout << "HEllo" << endl;
-    cout << "This includes the bug fix branch" << endl;
+    ifstream dataFile;
+    dataFile.open("data.csv");
 
-    cout << endl;
+    string word;
+    dataFile >> word;
+    cout << dataFile << endl; 
+
+
+
+
 }
